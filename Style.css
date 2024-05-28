@@ -26,9 +26,9 @@ form {
 }
 
 label[for="cardType"] {
-    text-align: left; /* Pusatkan label "Card Type" */
+    text-align: left;
     margin-bottom: 10px;
-    margin-left: 32.2%;/* Pusatkan label secara horizontal */
+    margin-left: 32.2%;
     display: block;
     color: white;
     margin-top: 50px;
