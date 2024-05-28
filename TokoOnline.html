@@ -24,13 +24,9 @@
                 <a href="#cart">
                     Cart</a>
                     <a id="notification" class="notification">{{ cart.length }}</a> 
-            </div>
-            
-            
+            </div>            
         </div>
 
-        
-        
         <div v-if="laptops.length === 0">
             <p>No laptops available</p>
         </div>
@@ -52,6 +48,7 @@
                 </div>
             </div>
         </div>
+
         <div id="cart-dialog" class="cart-dialog">
             <div id="cart-content" class="cart-content">
                 <span id="close-cart" @click="hideCart">&times;</span>
@@ -67,8 +64,6 @@
                 <a v-if="cart.length > 0" href="payment.html">Beli</a>
             </div>
         </div>
-        
-
         
         <div id="about">
             <div id="about-content">
@@ -91,7 +86,7 @@
                     { name: 'Rog Strix Scar 15',
                      price: 15000000000,
                      processor: '12th Gen Intel® Core™ i9-12900H Processor',
-                     vga: 'NVIDIA® GeForce RTX™ 3080 Ti Laptop GPU', 
+                     vga: 'NVIDIA® GeForce RTX™ 3080 Ti Laptop GPU',
                      screen: '15,6-inch', 
                      image: 'Assets/strix.png', 
                      link: 'https://rog.asus.com/id/laptops/rog-strix/rog-strix-scar-15-2022-series/spec/' },
@@ -99,7 +94,7 @@
                     { name: 'Hp Omen 15',
                     price: 22000000000,
                     processor: 'Intel® Core™ i7-9750H', 
-                    vga: 'NVIDIA® GeForce RTX™ 2060', 
+                    vga: 'NVIDIA® GeForce RTX™ 2060',
                     screen: '15.6 inch', 
                     image: 'Assets/omen15.png', 
                     link: 'https://www.hp.com/id-id/gaming/omen/15-laptop-intel.html' },
@@ -107,7 +102,7 @@
                     { name: 'Rog Zephyrus',
                     price: 60000000000, 
                     processor: 'AMD Ryzen™ 9 7945HX Processor', 
-                    vga: 'NVIDIA® GeForce RTX™ 4090 Laptop GPU', 
+                    vga: 'NVIDIA® GeForce RTX™ 4090 Laptop GPU',
                     screen: '16-inch', 
                     image: 'Assets/Zephyrus.png', 
                     link:'https://rog.asus.com/id/laptops/rog-zephyrus/rog-zephyrus-duo-16-2023-series/' },
@@ -123,7 +118,7 @@
                      { name: 'Lenovo Legion 7i (2024)',
                      price: 60000000000,
                      processor: '14th Generation Intel® Core™ i9-14900HX Processor',
-                     vga: 'NVIDIA® GeForce RTX™ 4070 Laptop GPU 8GB GDDR6 (115W) 2175MHz Boost Clock', 
+                     vga: 'NVIDIA® GeForce RTX™ 4070 Laptop GPU 8GB GDDR6 (115W) 2175MHz Boost Clock',
                      screen: '16 inches', 
                      image: 'Assets/Legion_7i.png', 
                      link: 'https://www.lenovo.com/us/en/p/laptops/legion-laptops/legion-7-series/legion-7i-gen-9-(16-inch-intel)/len101g0037?orgRef=https%253A%252F%252Fwww.google.com%252F' },
@@ -148,7 +143,7 @@
                      { name: 'Sword 16 HX B14V',
                      price: 40000000000,
                      processor: 'Intel® Core™ i7 processor 14700HX 20 cores',
-                     vga: 'NVIDIA® GeForce RTX™ 4070 Laptop GPU', 
+                     vga: 'NVIDIA® GeForce RTX™ 4070 Laptop GPU',
                      screen: '16" QHD+(2560x1600)', 
                      image: 'Assets/msi_sword16_HX_B14V.png', 
                      link: 'https://id.msi.com/Laptop/Sword-16-HX-B14VX' },
@@ -188,13 +183,13 @@
                     document.getElementById('about').style.display = 'none';
                 },
                 showCart() {
-                document.getElementById('cart-dialog').style.display = 'block';
+                    document.getElementById('cart-dialog').style.display = 'block';
                 },
                 hideCart() {
-                 document.getElementById('cart-dialog').style.display = 'none';
-             }
+                    document.getElementById('cart-dialog').style.display = 'none';
+                }
             }
-        });
-    </script>
+    });
+</script>
 </body>
 </html>

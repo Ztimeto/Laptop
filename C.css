@@ -2,7 +2,7 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #2e0555;
 }
 
 #app {
@@ -13,6 +13,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-decoration: none;
+    background-color: #22043d;
 }
 
 h1 {
@@ -72,7 +73,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(51, 51, 51, 0.7); /* Warna dengan transparansi */
+    background-color: rgba(125, 42, 198, 0.7); /* Warna dengan transparansi */
     color: #fff;
     position: fixed;
     z-index: 100;
@@ -89,6 +90,11 @@ a:hover {
 
 .navbar a:hover {
     color: #ffffff; /* Warna berubah ketika dihover */
+}
+
+.logo{
+    font-size: 50px;
+    padding-top: 15px;
 }
 
 
@@ -112,11 +118,6 @@ a:hover {
 
 .dropdown:hover a {
     color: #000; /* Warna teks saat dihover */
-}
-
-
-.logo{
-    font-size: 50px;
 }
 
 .catalog{
@@ -159,6 +160,7 @@ a:hover {
 .product-details {
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .product-details h2 {
@@ -222,12 +224,13 @@ a:hover {
 
 .product {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transisi perubahan transformasi dan bayangan */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Bayangan awal */
+    box-shadow: 0px 4px 20px rgba(194, 4, 187, 0.4); /* Bayangan awal */
+    background-color: #590aa3;
 }
 
 .product:hover {
     transform: translateY(-5px); /* Produk naik sedikit ketika dihover */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4); /* Bayangan saat dihover */
+    box-shadow: 0px 4px 20px rgba(194, 4, 187, 0.4); /* Bayangan saat dihover */
 }
 
        
@@ -323,7 +326,7 @@ button.add-to-cart:hover {
 }
 
 .product:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Warna gelap saat dihover */
+    background-color: rgba(75, 10, 113, 0.5); /* Warna gelap saat dihover */
 }
 
 .product:hover .product-details {
